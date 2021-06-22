@@ -35,6 +35,7 @@
             <span aria-hidden="true">&times;</span>
           </button>
           <!-- Long scrollable content here -->
+          <br class="hidden-md-and-up">
           <div id="modal-details-item">
           </div>
         </div>
@@ -47,8 +48,260 @@
           <a href="#" class="close" role="button" aria-label="Close">
             <span aria-hidden="true">&times;</span>
           </a>
+          <br class="hidden-md-and-up">
+          <h4 class="font-weight-medium">
+            필터 선택
+          </h4>
           <!-- Long scrollable content here -->
-          <div id="modal-filter-item">
+          <div id="modal-filter">
+            <div class="flex-grow-1 pb-10 font-weight-bold font-size-18">
+              <i class="fa fa-star-o" aria-hidden="true"></i> 버전
+            </div>
+            
+            <div class=" d-flex mb-10">
+              <div class="custom-switch">
+                <input
+                  id="t-i-rep2"
+                  type="checkbox"
+                  data-jplist-control="checkbox-text-filter"
+                  data-path=".item-ver"
+                  data-group="total-group"
+                  data-name="itemver6"
+                  data-or="itemver"
+                  data-mode="equal"
+                  value="리펜턴스"
+                  checked="checked"
+                  />
+                <label for="t-i-rep2">
+                    리펜턴스
+                </label>
+              </div>
+            </div>
+
+            <div class="dropdown-divider mb-10"></div>
+            <div class=" d-flex mb-10">
+              <div class="custom-switch">
+                <input
+                  id="t-i-org2"
+                  type="checkbox"
+                  data-jplist-control="checkbox-text-filter"
+                  data-path=".item-ver"
+                  data-group="total-group"
+                  data-name="itemver1"
+                  data-or="itemver"
+                  data-mode="equal"
+                  value="오리지널"
+                  checked="checked"
+                  />
+                <label for="t-i-org2">
+                    오리지널
+                </label>
+              </div>
+            </div>
+            
+            <div class=" d-flex mb-10">
+              <div class="custom-switch">
+                <input
+                  id="t-i-wol2"
+                  type="checkbox"
+                  data-jplist-control="checkbox-text-filter"
+                  data-path=".item-ver"
+                  data-group="total-group"
+                  data-name="itemver2"
+                  data-or="itemver"
+                  data-mode="equal"
+                  value="어린양의 분노"
+                  checked="checked"
+                  />
+                <label for="t-i-wo2l">
+                    어린양의 분노
+                </label>
+              </div>
+            </div>
+            
+            <div class=" d-flex mb-10">
+              <div class="custom-switch">
+                <input
+                  id="t-i-reb2"
+                  type="checkbox"
+                  data-jplist-control="checkbox-text-filter"
+                  data-path=".item-ver"
+                  data-group="total-group"
+                  data-name="itemver3"
+                  data-or="itemver"
+                  data-mode="equal"
+                  value="리버스"
+                  checked="checked"
+                  />
+                <label for="t-i-reb2">
+                    리버스
+                </label>
+              </div>
+            </div>
+            
+            <div class=" d-flex mb-10">
+              <div class="custom-switch">
+                <input
+                  id="t-i-aft2"
+                  type="checkbox"
+                  data-jplist-control="checkbox-text-filter"
+                  data-path=".item-ver"
+                  data-group="total-group"
+                  data-name="itemver4"
+                  data-or="itemver"
+                  data-mode="equal"
+                  value="애프터버스"
+                  checked="checked"
+                  />
+                <label for="t-i-aft2">
+                  애프터버스
+                </label>
+              </div>
+            </div>
+            
+            <div class=" d-flex mb-10">
+              <div class="custom-switch">
+                <input
+                  id="t-i-abp2"
+                  type="checkbox"
+                  data-jplist-control="checkbox-text-filter"
+                  data-path=".item-ver"
+                  data-group="total-group"
+                  data-name="itemver5"
+                  data-or="itemver"
+                  data-mode="equal"
+                  value="애프터버스+"
+                  checked="checked"
+                  />
+                <label for="t-i-abp2">
+                  애프터버스+
+                </label>
+              </div>
+            </div>
+            
+            <div class="dropdown-divider mb-10"></div>
+            <div class=" d-flex mb-10">
+              <div class="custom-switch">
+                <input
+                  id="t-i-pnw2"
+                  type="checkbox"
+                  data-jplist-control="checkbox-text-filter"
+                  data-path=".item-ver"
+                  data-group="total-group"
+                  data-name="itemver_pnw"
+                  data-or="itemver"
+                  data-mode="equal"
+                  value="푸딩 & 와카바"
+                  />
+                <label for="t-i-pnw2">
+                    푸딩 & 와카바
+                </label>
+              </div>
+            </div>
+            <div class="dropdown-divider mb-10 bg-primary"></div>
+            <div class="flex-grow-1 mb-10 font-weight-bold font-size-18">
+              <i class="fa fa-star-o" aria-hidden="true"></i> 퀄리티
+            </div>
+            <div class="mb-10">
+              <div class="custom-checkbox d-inline-block ml-auto mr-10">
+                <input
+                  id="t-q-02"
+                  type="checkbox"
+                  data-jplist-control="checkbox-text-filter"
+                  data-path=".item-quality"
+                  data-group="total-group"
+                  data-name="itemq0"
+                  data-or="itemquality"
+                  data-mode="endsWith"
+                  value="0"
+                  />
+                <label for="t-q-02">
+                    0
+                </label>
+              </div>
+              <div class="custom-checkbox d-inline-block mr-10">
+                <input
+                  id="t-q-12"
+                  type="checkbox"
+                  data-jplist-control="checkbox-text-filter"
+                  data-path=".item-quality"
+                  data-group="total-group"
+                  data-name="itemq1"
+                  data-or="itemquality"
+                  data-mode="endsWith"
+                  value="1"
+                  />
+                <label for="t-q-12">
+                    1
+                </label>
+              </div>
+              <div class="custom-checkbox d-inline-block mr-10">
+                <input
+                  id="t-q-22"
+                  type="checkbox"
+                  data-jplist-control="checkbox-text-filter"
+                  data-path=".item-quality"
+                  data-group="total-group"
+                  data-name="itemq2"
+                  data-or="itemquality"
+                  data-mode="endsWith"
+                  value="2"
+                  />
+                <label for="t-q-22">
+                    2
+                </label>
+              </div>
+              <div class="custom-checkbox d-inline-block mr-10">
+                <input
+                  id="t-q-32"
+                  type="checkbox"
+                  data-jplist-control="checkbox-text-filter"
+                  data-path=".item-quality"
+                  data-group="total-group"
+                  data-name="itemq3"
+                  data-or="itemquality"
+                  data-mode="endsWith"
+                  value="3"
+                  />
+                <label for="t-q-32">
+                    3
+                </label>
+              </div>
+              <div class="custom-checkbox d-inline-block mr-10">
+                <input
+                  id="t-q-42"
+                  type="checkbox"
+                  data-jplist-control="checkbox-text-filter"
+                  data-path=".item-quality"
+                  data-group="total-group"
+                  data-name="itemq4"
+                  data-or="itemquality"
+                  data-mode="endsWith"
+                  value="4"
+                  />
+                <label for="t-q-42">
+                    4
+                </label>
+              </div>
+            </div>
+            <div class="dropdown-divider mb-10 bg-primary"></div>
+
+            <div class="flex-grow-1 mb-10 font-weight-bold font-size-18">
+              <i class="fa fa-star-o" aria-hidden="true"></i> 배열
+            </div>
+            
+            <div class="flex-grow-1 mb-10 font-weight-bold font-size-18">
+              <i class="fa fa-star-o" aria-hidden="true"></i> 태그
+            </div>
+            
+            <div class="flex-grow-1 mb-10 font-weight-bold font-size-18">
+              <i class="fa fa-star-o" aria-hidden="true"></i> 해금조건
+            </div>
+            
+            <div class="flex-grow-1 mb-10 font-weight-bold font-size-18">
+              <i class="fa fa-star-o" aria-hidden="true"></i> 색상
+            </div>
+
 
           </div>
         </div>
@@ -81,6 +334,10 @@
               data-jplist-control="textbox-filter" data-group="total-group" data-name="all-filter" >
           </div>
           <div class="nav-item dropdown with-arrow">
+            <button class="btn mx-5" type="button" data-toggle="modal" data-target="modal-filter">
+                <i class="fa fa-filter" aria-hidden="true"></i>
+                <span class="sr-only">Filter</span>
+            </button>
             <button class="btn mx-5" type="button" data-toggle="dropdown" id="nav-link-dropdown-toggle">
                 <i class="fa fa-bars" aria-hidden="true"></i>
                 <span class="sr-only">Menu</span>
