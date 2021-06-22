@@ -55,7 +55,7 @@
           <!-- Long scrollable content here -->
           <div id="modal-filter">
             <div class="flex-grow-1 pb-10 font-weight-bold font-size-18">
-              <i class="fa fa-star-o" aria-hidden="true"></i> 버전
+              <i class="fa fa-code-fork" aria-hidden="true"></i> 버전
             </div>
             
             <div class=" d-flex mb-10">
@@ -287,15 +287,121 @@
             <div class="dropdown-divider mb-10 bg-primary"></div>
 
             <div class="flex-grow-1 mb-10 font-weight-bold font-size-18">
-              <i class="fa fa-star-o" aria-hidden="true"></i> 배열
+              <i class="fa fa-ticket" aria-hidden="true"></i> 배열
+            </div>
+
+            <div class="row">
+              <div class="col-6">
+                <div class="flex-grow-1 mb-10 font-weight-bold">
+                  <i class="fa fa-star" aria-hidden="true"></i> 일반배열
+                </div>
+                
+                <div class=" d-flex mb-10">
+                  <div class="custom-switch">
+                    <input
+                      id="p-i-treasure"
+                      type="checkbox"
+                      data-jplist-control="checkbox-text-filter"
+                      data-path=".item-pool"
+                      data-group="total-group"
+                      data-name="itempool"
+                      data-or="itempool"
+                      value="보물방"
+                      />
+                    <label for="p-i-treasure">
+                        보물방
+                    </label>
+                  </div>
+                </div>
+
+              </div>
+              <div class="col-6">
+                <div class="flex-grow-1 mb-10 font-weight-bold">
+                  <i class="fa fa-usd" aria-hidden="true"></i> 그리드배열
+                </div>
+                
+                <div class=" d-flex mb-10">
+                  <div class="custom-switch">
+                    <input
+                      id="p-g-treasure"
+                      type="checkbox"
+                      data-jplist-control="checkbox-text-filter"
+                      data-path=".item-greedpool"
+                      data-group="total-group"
+                      data-name="itempool"
+                      data-or="itempool"
+                      value="보물방"
+                      />
+                    <label for="p-g-treasure">
+                        보물방
+                    </label>
+                  </div>
+                </div>
+
+
+
+              </div>
             </div>
             
             <div class="flex-grow-1 mb-10 font-weight-bold font-size-18">
-              <i class="fa fa-star-o" aria-hidden="true"></i> 태그
+              <i class="fa fa-tags" aria-hidden="true"></i> 태그
             </div>
             
             <div class="flex-grow-1 mb-10 font-weight-bold font-size-18">
-              <i class="fa fa-star-o" aria-hidden="true"></i> 해금조건
+              <i class="fa fa-unlock" aria-hidden="true"></i> 해금조건
+            </div>
+            
+            <div class="row">
+              <div class="col-6">
+                <div class="flex-grow-1 mb-10 font-weight-bold">
+                  <i class="fa fa-user" aria-hidden="true"></i> 캐릭터별
+                </div>
+                
+                <div class=" d-flex mb-10">
+                  <div class="custom-switch">
+                    <input
+                      id="u-c-isaac"
+                      type="checkbox"
+                      data-jplist-control="checkbox-text-filter"
+                      data-path=".item-unlock"
+                      data-group="total-group"
+                      data-name="itemunlockchar"
+                      data-or="itemunlockchar"
+                      value="아이작"
+                      />
+                    <label for="u-c-isaac">
+                        아이작
+                    </label>
+                  </div>
+                </div>
+
+              </div>
+              <div class="col-6">
+                <div class="flex-grow-1 mb-10 font-weight-bold">
+                  <i class="fa fa-list" aria-hidden="true"></i> 체크리스트별
+                </div>
+                
+                <div class=" d-flex mb-10">
+                  <div class="custom-switch">
+                    <input
+                      id="u-l-heart"
+                      type="checkbox"
+                      data-jplist-control="checkbox-text-filter"
+                      data-path=".item-unlock"
+                      data-group="total-group"
+                      data-name="itemunlocklist"
+                      data-or="itemunlocklist"
+                      value="하드 모드 엄마 심장"
+                      />
+                    <label for="u-l-heart">
+                        엄마 심장(하드)
+                    </label>
+                  </div>
+                </div>
+
+
+
+              </div>
             </div>
             
             <div class="flex-grow-1 mb-10 font-weight-bold font-size-18">
