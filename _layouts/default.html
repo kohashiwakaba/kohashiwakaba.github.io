@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="en" class="auto-scaling-disabled">
   <head>
     <!-- Meta tags -->
     <meta charset="utf-8" />
@@ -22,6 +22,11 @@
       Use the following (no variables, supports IE11):
       <link href="css/halfmoon.min.css" rel="stylesheet" />
     -->
+    <style>
+      .img-preview{
+        height: fit-content;
+      }
+    </style>
   </head>
   <body class="with-custom-webkit-scrollbars with-custom-css-scrollbars" data-dm-shortcut-enabled="true" data-sidebar-shortcut-enabled="true" data-set-preferred-theme-onload="true">
     <!-- Modals go here -->
@@ -113,7 +118,7 @@
                   value="어린양의 분노"
                   checked="checked"
                   />
-                <label for="t-i-wo2l">
+                <label for="t-i-wol2">
                     어린양의 분노
                 </label>
               </div>
@@ -442,6 +447,231 @@
                     <h6 class="mt-5">노말/하드 모드 상점 배열</h6>
                     <div>
                       상점, 블랙마켓, VIP 상점에서 등장하는 아이템입니다. 대부분 게임 진행에 이로운 아이템을 제공해 줍니다. VIP 상점에서 아이템을 소환할 경우 상점 배열의 아이템이 등장합니다.
+                    </div>
+                  </div>
+                </div>
+                <div class="dropdown toggle-on-hover d-flex mb-10" id="d-p-i-library">
+                  <div class="">
+                    <div class="custom-switch">
+                      <input
+                        id="p-i-library"
+                        type="checkbox"
+                        data-jplist-control="checkbox-text-filter"
+                        data-path=".item-pool"
+                        data-group="total-group"
+                        data-name="itempool"
+                        data-or="itempool"
+                        value="책방"
+                        />
+                      <label for="p-i-library">
+                        책방
+                      </label>
+                    </div>
+                  </div>
+                  <div class="dropdown-menu w-300 w-sm-500 border bg-very-dark-dm p-10" aria-labelledby="d-p-i-library">
+                    <h6 class="mt-5">노말/하드 모드 책방 배열</h6>
+                    <div>
+                      책방에서 등장하는 아이템입니다. 대부분 액티브 아이템입니다.
+                    </div>
+                  </div>
+                </div>
+                <div class="dropdown toggle-on-hover d-flex mb-10" id="d-p-i-secret">
+                  <div class="">
+                    <div class="custom-switch">
+                      <input
+                        id="p-i-secret"
+                        type="checkbox"
+                        data-jplist-control="checkbox-text-filter"
+                        data-path=".item-pool"
+                        data-group="total-group"
+                        data-name="itempool"
+                        data-or="itempool"
+                        value="비밀방"
+                        />
+                      <label for="p-i-secret">
+                        비밀방
+                      </label>
+                    </div>
+                  </div>
+                  <div class="dropdown-menu w-300 w-sm-500 border bg-very-dark-dm p-10" aria-labelledby="d-p-i-secret">
+                    <h6 class="mt-5">노말/하드 모드 비밀방 배열</h6>
+                    <div>
+                      비밀방, 일급 비밀방, VIP 상점에서 등장하는 아이템입니다. 등장하는 아이템의 성능 폭이 매우 크며 VIP 상점에서의 가격이 다른 배열에 비해 매우 비쌉니다.
+                    </div>
+                  </div>
+                </div>
+                <div class="dropdown toggle-on-hover d-flex mb-10" id="d-p-i-curse">
+                  <div class="">
+                    <div class="custom-switch">
+                      <input
+                        id="p-i-curse"
+                        type="checkbox"
+                        data-jplist-control="checkbox-text-filter"
+                        data-path=".item-pool"
+                        data-group="total-group"
+                        data-name="itempool"
+                        data-or="itempool"
+                        value="저주방"
+                        />
+                      <label for="p-i-curse">
+                        저주방
+                      </label>
+                    </div>
+                  </div>
+                  <div class="dropdown-menu w-300 w-sm-500 border bg-very-dark-dm p-10" aria-labelledby="d-p-i-curse">
+                    <h6 class="mt-5">노말/하드 모드 저주방 배열</h6>
+                    <div>
+                      저주방에서 등장하는 아이템입니다.
+                    </div>
+                  </div>
+                </div>
+                <div class="dropdown toggle-on-hover d-flex mb-10" id="d-p-i-devil">
+                  <div class="">
+                    <div class="custom-switch">
+                      <input
+                        id="p-i-devil"
+                        type="checkbox"
+                        data-jplist-control="checkbox-text-filter"
+                        data-path=".item-pool"
+                        data-group="total-group"
+                        data-name="itempool"
+                        data-or="itempool"
+                        value="악마방"
+                        />
+                      <label for="p-i-devil">
+                        악마방
+                      </label>
+                    </div>
+                  </div>
+                  <div class="dropdown-menu w-300 w-sm-500 border bg-very-dark-dm p-10" aria-labelledby="d-p-i-devil">
+                    <h6 class="mt-5">노말/하드 모드 악마방 배열</h6>
+                    <div>
+                      악마방, VIP 상점에서 등장하는 아이템입니다. 사탄과 관련된 아이템이 많이 등장합니다.
+                    </div>
+                  </div>
+                </div>
+                <div class="dropdown toggle-on-hover d-flex mb-10" id="d-p-i-angel">
+                  <div class="">
+                    <div class="custom-switch">
+                      <input
+                        id="p-i-angel"
+                        type="checkbox"
+                        data-jplist-control="checkbox-text-filter"
+                        data-path=".item-pool"
+                        data-group="total-group"
+                        data-name="itempool"
+                        data-or="itempool"
+                        value="천사방"
+                        />
+                      <label for="p-i-angel">
+                        천사방
+                      </label>
+                    </div>
+                  </div>
+                  <div class="dropdown-menu w-300 w-sm-500 border bg-very-dark-dm p-10" aria-labelledby="d-p-i-angel">
+                    <h6 class="mt-5">노말/하드 모드 천사방 배열</h6>
+                    <div>
+                      천사방, VIP 상점에서 등장하는 아이템입니다. 성스러움과 천사와 관련된 아이템이 많이 등장합니다.
+                    </div>
+                  </div>
+                </div>
+                <div class="dropdown toggle-on-hover d-flex mb-10" id="d-p-i-planetarium">
+                  <div class="">
+                    <div class="custom-switch">
+                      <input
+                        id="p-i-planetarium"
+                        type="checkbox"
+                        data-jplist-control="checkbox-text-filter"
+                        data-path=".item-pool"
+                        data-group="total-group"
+                        data-name="itempool"
+                        data-or="itempool"
+                        value="천체관"
+                        />
+                      <label for="p-i-planetarium">
+                        천체관
+                      </label>
+                    </div>
+                  </div>
+                  <div class="dropdown-menu w-300 w-sm-500 border bg-very-dark-dm p-10" aria-labelledby="d-p-i-planetarium">
+                    <h6 class="mt-5">노말/하드 모드 천체관 배열</h6>
+                    <div>
+                      천체관에서 등장하는 아이템입니다. 태양계 아이템이 등장합니다.
+                    </div>
+                  </div>
+                </div>
+                <div class="dropdown toggle-on-hover d-flex mb-10" id="d-p-i-momschest">
+                  <div class="">
+                    <div class="custom-switch">
+                      <input
+                        id="p-i-momschest"
+                        type="checkbox"
+                        data-jplist-control="checkbox-text-filter"
+                        data-path=".item-pool"
+                        data-group="total-group"
+                        data-name="itempool"
+                        data-or="itempool"
+                        value="엄마상자"
+                        />
+                      <label for="p-i-momschest">
+                        엄마상자
+                      </label>
+                    </div>
+                  </div>
+                  <div class="dropdown-menu w-300 w-sm-500 border bg-very-dark-dm p-10" aria-labelledby="d-p-i-momschest">
+                    <h6 class="mt-5">엄마 상자 배열</h6>
+                    <div>
+                      엄마의 상자에서 등장하는 아이템입니다. Home 스테이지에서 도그마 조우 직전에서 나오는 상자를 통해 획득할 수 있습니다. 최초 개방 시 반드시 Red Key가 등장합니다.
+                    </div>
+                  </div>
+                </div>
+                <div class="dropdown toggle-on-hover d-flex mb-10" id="d-p-i-goldenchest">
+                  <div class="">
+                    <div class="custom-switch">
+                      <input
+                        id="p-i-goldenchest"
+                        type="checkbox"
+                        data-jplist-control="checkbox-text-filter"
+                        data-path=".item-pool"
+                        data-group="total-group"
+                        data-name="itempool"
+                        data-or="itempool"
+                        value="황금상자"
+                        />
+                      <label for="p-i-goldenchest">
+                        황금상자
+                      </label>
+                    </div>
+                  </div>
+                  <div class="dropdown-menu w-300 w-sm-500 border bg-very-dark-dm p-10" aria-labelledby="d-p-i-goldenchest">
+                    <h6 class="mt-5">황금 상자 배열</h6>
+                    <div>
+                      금고방, 황금 상자, 하얀 상자에서 등장하는 아이템입니다.
+                    </div>
+                  </div>
+                </div>
+                <div class="dropdown toggle-on-hover d-flex mb-10" id="d-p-i-redchest">
+                  <div class="">
+                    <div class="custom-switch">
+                      <input
+                        id="p-i-redchest"
+                        type="checkbox"
+                        data-jplist-control="checkbox-text-filter"
+                        data-path=".item-pool"
+                        data-group="total-group"
+                        data-name="itempool"
+                        data-or="itempool"
+                        value="빨간상자"
+                        />
+                      <label for="p-i-redchest">
+                        빨간상자
+                      </label>
+                    </div>
+                  </div>
+                  <div class="dropdown-menu w-300 w-sm-500 border bg-very-dark-dm p-10" aria-labelledby="d-p-i-redchest">
+                    <h6 class="mt-5">빨간 상자 배열</h6>
+                    <div>
+                      빨간 상자에서 등장하는 아이템입니다. 대부분이 구피와 관련되어 있습니다.
                     </div>
                   </div>
                 </div>
@@ -1370,14 +1600,14 @@
             <div data-jplist-item class="item-box item-icon d-inline-block">  <img src="isaac/data/col/collectibles_011_1up.png">  {% include isaac/011.html %}</div>
             <div data-jplist-item class="item-box item-icon d-inline-block">  <img src="isaac/data/col/collectibles_012_magicmushroom.png">  {% include isaac/012.html %}</div>
             <div data-jplist-item class="item-box item-icon d-inline-block">  <img src="isaac/data/col/collectibles_013_thevirus.png">  {% include isaac/013.html %}</div>
-            <div data-jplist-item class="item-box item-icon d-inline-block">  <img src="isaac/data/col/collectibles_014_roidrage.png">  {% include isaac/001.html %}</div>
-            <div data-jplist-item class="item-box item-icon d-inline-block">  <img src="isaac/data/col/collectibles_015_heart.png">  {% include isaac/001.html %}</div>
-            <div data-jplist-item class="item-box item-icon d-inline-block">  <img src="isaac/data/col/collectibles_016_rawliver.png">  {% include isaac/001.html %}</div>
-            <div data-jplist-item class="item-box item-icon d-inline-block">  <img src="isaac/data/col/collectibles_017_skeletonkey.png">  {% include isaac/001.html %}</div>
-            <div data-jplist-item class="item-box item-icon d-inline-block">  <img src="isaac/data/col/collectibles_018_adollar.png">  {% include isaac/001.html %}</div>
-            <div data-jplist-item class="item-box item-icon d-inline-block">  <img src="isaac/data/col/collectibles_019_boom.png">  {% include isaac/001.html %}</div>
-            <div data-jplist-item class="item-box item-icon d-inline-block">  <img src="isaac/data/col/collectibles_020_transcendence.png">  {% include isaac/001.html %}</div>
-            <div data-jplist-item class="item-box item-icon d-inline-block">  <img src="isaac/data/col/collectibles_021_thecompass.png">  {% include isaac/001.html %}</div>
+            <div data-jplist-item class="item-box item-icon d-inline-block">  <img src="isaac/data/col/collectibles_014_roidrage.png">  {% include isaac/014.html %}</div>
+            <div data-jplist-item class="item-box item-icon d-inline-block">  <img src="isaac/data/col/collectibles_015_heart.png">  {% include isaac/015.html %}</div>
+            <div data-jplist-item class="item-box item-icon d-inline-block">  <img src="isaac/data/col/collectibles_016_rawliver.png">  {% include isaac/016.html %}</div>
+            <div data-jplist-item class="item-box item-icon d-inline-block">  <img src="isaac/data/col/collectibles_017_skeletonkey.png">  {% include isaac/017.html %}</div>
+            <div data-jplist-item class="item-box item-icon d-inline-block">  <img src="isaac/data/col/collectibles_018_adollar.png">  {% include isaac/018.html %}</div>
+            <div data-jplist-item class="item-box item-icon d-inline-block">  <img src="isaac/data/col/collectibles_019_boom.png">  {% include isaac/019.html %}</div>
+            <div data-jplist-item class="item-box item-icon d-inline-block">  <img src="isaac/data/col/collectibles_020_transcendence.png">  {% include isaac/020.html %}</div>
+            <div data-jplist-item class="item-box item-icon d-inline-block">  <img src="isaac/data/col/collectibles_021_thecompass.png">  {% include isaac/021.html %}</div>
             <div data-jplist-item class="item-box item-icon d-inline-block">  <img src="isaac/data/col/collectibles_022_lunch.png">  {% include isaac/001.html %}</div>
             <div data-jplist-item class="item-box item-icon d-inline-block">  <img src="isaac/data/col/collectibles_023_dinner.png">  {% include isaac/001.html %}</div>
             <div data-jplist-item class="item-box item-icon d-inline-block">  <img src="isaac/data/col/collectibles_024_dessert.png">  {% include isaac/001.html %}</div>
@@ -2134,12 +2364,14 @@
       $(".item-box.item-icon").hover(function() {
         var found = $(this).children("item-details").clone()
         var samever = $(this).find(".item-ver").text()
+        var image = $(this).find("img").attr("src")
         var s = $(".item-ver").filter(function() {
             return $(this).text() === samever;
         }).closest(".item-box")
         s.addClass("bg-primary")
         $(this).addClass("bg-danger")
         $(".sidebar").html(found)
+        $(".sidebar").children("item-details").find("img").attr("src", image)
       },
       function() {
         $(".item-box").removeClass("bg-primary")
@@ -2148,7 +2380,9 @@
       })
       $(".item-box.item-icon").click(function() {
         var found = $(this).children("item-details").clone()
+        var image = $(this).find("img").attr("src")
         $("#modal-details-item").html(found)
+        $("#modal-details-item").children("item-details").find("img").attr("src", image)
         halfmoon.toggleModal('modal-details')
       })
       jplist.init();
